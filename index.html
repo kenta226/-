@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2026 CLASS CASINO ー スロットマシン</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="machine">
+            <h1 class="title">2026 CLASS CASINO</h1>
+
+            <div class="reels">
+                <div class="reel" id="reel0">0</div>
+                <div class="reel" id="reel1">0</div>
+                <div class="reel" id="reel2">0</div>
+            </div>
+
+            <div class="stops">
+                <button type="button" class="btn btn-stop" id="stop0">STOP 1</button>
+                <button type="button" class="btn btn-stop" id="stop1">STOP 2</button>
+                <button type="button" class="btn btn-stop" id="stop2">STOP 3</button>
+            </div>
+
+            <div class="panel">
+                <p class="count">コイン <span id="coinLabel">50</span>枚</p>
+                <p class="count">ベット <span id="betLabel">0</span>枚</p>
+            </div>
+
+            <div class="controls">
+                <button type="button" class="btn btn-main" id="insertBtn">コインを入れる（３枚）</button>
+                <button type="button" class="btn btn-main" id="leverBtn">レバーを引く</button>
+            </div>
+
+            <div class="message" id="message" aria-live="polite">コインを入れてください</div>
+            </main>
+
+            <script src="slot.js"></script>
+            <script src="main.js"></script>
+    </body>
+</html>
